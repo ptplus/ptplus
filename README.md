@@ -4,12 +4,12 @@
 PT Plus is a ProfitTrailer tool that solves the “Settings” problem once and for all by combining all code files and wiki definitions into one easy to use interface for generating ProfitTrailer code. Long gone are the days of scrounging through wiki definitions or going back and forth to a code editor. This tool let's you skip past the learning curve and jump straight to Trailing those profits!
 
 ### Features 
-✔ Wiki definitions at a glance <br>
-✔ Edit settings in real-time <br>
-✔ Never touch code again <br>
-✔ Save settings templates online <br>
-✔ Download settings to zip folder <br>
-✔ And a lot more! <br>
+🤖 Wiki definitions at a glance <br>
+🤖 Edit settings in real-time <br>
+🤖 Never touch code again <br>
+🤖 Save settings templates online <br>
+🤖 Download settings to zip folder <br>
+🤖 And a lot more! <br>
 
 <br>
 
@@ -18,10 +18,10 @@ PT Plus is a ProfitTrailer tool that solves the “Settings” problem once and 
 
 
 ### How To Get It.
-PT+ is in active development. Subscribe to our mailing list to be notified when it's ready!
+PT+ is in active development. [Subscribe](https://ptplus.net/subscribe) to our mailing list to be notified when it's ready!
 
 ### Support This Project. 
-If you'd like to support this project, please have a look at our Patreon, or feel free to send some over some Crypto to any of the addresses below.
+If you'd like to support this project, please have a look at our [Patreon](https://ptplus.net/patreon), or feel free to send some over some Crypto to any of the addresses below.
 
 [![IMAGE ALT TEXT HERE](https://lh4.googleusercontent.com/DDT6LaCKTcCkUAJlA8hCVcBFhz3MqpG45k6jp7rgwC5mViWSBDbH-UjeZSzAYFWlzXBQUkDkg6zD2RFLFcGLd4rJE0awTdi_JhlFWg5oYidy9jlECI_NAMxHGQs4RGdEozgezLg=s512)](https://youtu.be/yUp5guD-PrU)
 
