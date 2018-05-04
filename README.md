@@ -12,5 +12,4 @@ PT Plus is a ProfitTrailer tool that solves the “Settings” problem once and 
 🤖 Download settings to zip folder <br>
 🤖 And a lot more! <br>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yUp5guD-PrU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/yUp5guD-PrU/0.jpg)](https://youtu.be/yUp5guD-PrU)
