@@ -23,7 +23,7 @@ PT+ is in active development. [Subscribe](https://ptplus.net/subscribe) to our m
 ### Support This Project. 
 If you'd like to support this project, please have a look at our [Patreon](https://ptplus.net/patreon), or feel free to send some over some Crypto to any of the addresses below.
 
-[![IMAGE ALT TEXT HERE](https://lh4.googleusercontent.com/DDT6LaCKTcCkUAJlA8hCVcBFhz3MqpG45k6jp7rgwC5mViWSBDbH-UjeZSzAYFWlzXBQUkDkg6zD2RFLFcGLd4rJE0awTdi_JhlFWg5oYidy9jlECI_NAMxHGQs4RGdEozgezLg=s512)](https://youtu.be/yUp5guD-PrU)
+[![IMAGE ALT TEXT HERE](https://lh4.googleusercontent.com/DDT6LaCKTcCkUAJlA8hCVcBFhz3MqpG45k6jp7rgwC5mViWSBDbH-UjeZSzAYFWlzXBQUkDkg6zD2RFLFcGLd4rJE0awTdi_JhlFWg5oYidy9jlECI_NAMxHGQs4RGdEozgezLg=s512)](https://ptplus.net/patreon)
 
 **LTC** ➜ LWEUGeezZ4j35BBjY3Tr27ibqazdjkGo1W <br>
 **BTC** ➜ 1KTQLLcYkfJ1vbfn75waUX2y4KRhMiBiFk <br>
