@@ -38,4 +38,5 @@ If you'd like to support this project, please have a look at our [Patreon](https
 🤖 DISCORD . . . . . . https://ptplus.net/discord <br>
 🤖 GITHUB . . . . . . . https://ptplus.net/github <br>
 🤖 FACEBOOK . . . . .https://ptplus.net/facebook <br>
+🤖 TWITTER . . . . . . .https://ptplus.net/twitter <br>
 🤖 YOUTUBE . . . . . .https://ptplus.net/youtube <br>
