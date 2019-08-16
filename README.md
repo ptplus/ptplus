@@ -40,3 +40,45 @@ If you'd like to support this project, please have a look at our [Patreon](https
 🤖 FACEBOOK . . . . .https://ptplus.net/facebook <br>
 🤖 TWITTER . . . . . . .https://ptplus.net/twitter <br>
 🤖 YOUTUBE . . . . . .https://ptplus.net/youtube <br>
+
+
+
+
+# Development
+
+
+### 1. Clone repo
+```
+git clone https://github.com/ptplus/app.git
+```
+
+### 2. Go inside cloned repo
+```
+cd app
+```
+
+### 3. Install all dependencies 
+
+Make sure nodejs with npm is installed on your machine along with git bash if you're on Windows
+```
+npm install
+```
+
+### 5. You may need to install gulp globally also
+```
+npm install -g gulp
+```
+
+### 4. Run default gulp task for development
+
+This will open a browser window with live reload [browser sync]. 
+```
+gulp
+```
+
+### 5. Build for production
+
+In order to build the production version that minifys and concatenates your files, you'll need to run gulp build. This will also open a browser window with live reload [browser sync].
+```
+gulp build
+```
