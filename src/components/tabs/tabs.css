@@ -1,0 +1,47 @@
+
+/* Tabs
+*******************************************************************************************/
+.tab-container { 
+	background: rgba(0,0,0,.1); 
+	display: grid; 
+	grid-template-columns: auto 1fr auto; 
+	grid-gap: 10px;
+	align-items: center;
+	justify-content: space-around;
+	height: 72px;
+	padding: 0 1rem 0 .75rem;
+}
+
+
+/* Graphic
+***************************/
+.tab-container .graphic-container 						 { background: rgba(0,0,0,.14); color: var(--color-bg); margin: 0; }
+.tab-container .graphic-container img.material-icons     { filter: invert(100%); opacity: .1; }
+.tab-container .graphic-container i.material-icons		 { color: white; opacity: .14; }
+
+/* Title
+***************************/
+.tab-container .title-container 						 { display: grid; grid-template-rows: auto 10px; grid-gap: 3px; }
+.tab-container .title-container .title 				     { display: grid; grid-gap: 2px; grid-template-columns: auto auto; align-items: baseline; justify-content: space-between; }
+.tab-container .title-container .title h3			     { color: white; font-weight: 400; font-size: 16px; letter-spacing: 0.02em; }
+.tab-container .title-container .title .stats-container  { color: rgba(255,255,255,.38); overflow: visible; font-size: 10px; }
+
+/* Bar
+***************************/
+.tab-container .title-container .graph 				     { background: var(--mdc-theme-dark-divider); height: 10px; border-radius: 10px; overflow: hidden; position: relative; }
+.tab-container .title-container .graph .meter {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    background: var(--mdc-theme-primary);
+    display: block;
+    width: 100%;
+    transition: .22s cubic-bezier(.86,0,.07,1) 0.22s;
+    transform: translateX(0);
+}
+
+/* Percent
+***************************/
+.tab-container .percent 		 { text-align: right; display: inline-block; font-weight: 900; color: var(--mdc-theme-primary); font-size: 32px; position: relative; margin-right: 6px; letter-spacing: -.04em; }
+.tab-container .percent:after    { display: block; content: "%"; font-weight: 300; font-size: 50%; position: absolute; left: 100%; bottom: calc(100% - 18px); }

@@ -1,0 +1,77 @@
+label {
+  display: block;
+}
+
+input[type=radio]+label,
+input[type=checkbox]+label {
+  display: inline-block;
+  padding-left: 10px;
+  font-weight: normal;
+}
+
+button[disabled],
+html input[disabled] {
+  background: rgb(235, 235, 228);
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel],
+select,
+textarea {
+  min-height: 45px;
+  border-radius: 2px;
+  border: 1px solid #f4f4f4;
+  padding: 8px;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+select:focus,
+textarea:focus {
+  border-color: #15bdec;
+}
+
+.form {
+  max-width: 50%;
+  margin: auto;
+}
+
+.form label {
+  font-size: 10px;
+  color: #989798;
+  position: relative;
+  display: block;
+}
+
+.form label:before {
+  content: attr(text);
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
+
+.form label * {
+  display: block;
+  width: 100%;
+}
+
+.form input[type=text],
+.form input[type=password],
+.form input[type=email],
+.form input[type=tel],
+.form select,
+.form textarea {
+  padding: 18px 18px 8px;
+}
+
+input,
+select,
+textarea {
+  max-width: 100%;
+}

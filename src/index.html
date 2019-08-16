@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" class="oneezy">
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116707669-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116707669-1');
+    </script>
+
+    <title>PT+</title>
+    <meta name="description" content="ProfitTrailer's Missing GUI | PT+">
+    <meta name="keywords" content="PT+, PT Plus, ProfitTrailer Plus, Profit Trailer Plus, ProfitTrailer Addon, Crypto Bot, Crypto Trading Bot, Profit Trailer Settings, PT Settings, PT Tracker, PTF, PT Feeder">
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"> 
+    <!-- <meta name="google-site-verification" content=""> -->
+    
+    <link rel="canonical" href="https://www.ptplus.net/index.html">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/manifest/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/manifest/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/manifest/favicon-16x16.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="mask-icon" href="images/manifest/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="images/manifest/mstile-mstile-150x150.png">
+    <meta name="theme-color" content="#ff9900">
+
+    <!-- FACESPACE -->
+    <meta property="og:site_name" content="PT Plus" />
+    <meta property="og:url" content="https://ptplus.net/secret/beta/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PT Plus" />
+    <meta property="og:description" content="ProfitTrailer's Missing GUI." />
+    <meta property="og:image" content="https://ptplus.net/images/social/og-beta.png" />
+
+
+    <!-- build:css css/styles.min.css -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="components/tabs/tabs.css">
+    <!-- <link rel="stylesheet" href="components/dialog/dialog.css"> -->
+    <link rel="stylesheet" href="components/rollfx/rollfx.css">
+    <link rel="stylesheet" href="components/clipboard/clipboard.css">
+    <link rel="stylesheet" href="components/downloadzip/downloadzip.css">
+    <link rel="stylesheet" href="components/fab/fab.css">
+    <link rel="stylesheet" href="components/tooltips/tooltips.css">
+    <!-- endbuild -->
+
+  </head>
+
+  <body class="view-horizontal">
+
+    <!-- HEADER (Level 1)
+    ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ -->
+    <header>
+
+      <!-- Top Toolbar 
+      ▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃ -->
+      <div class="toolbar toolbar-primary">
+        <!-- Left -->
+        <section class="header-left">
+          <a href="#" class="material-icons mdc-toolbar__menu-icon icon-menu">menu</a>
+          <img src="images/logo/ptplus-logo__dark-theme-horizontal.svg" class="logo" alt="PT+">
+        </section>
+        
+        <!-- Right -->
+        <section class="header-right">
+
+<!--  Settings Loader
+========================================= -->
+          <section class="input-container input-container--select">
+            <div id="settingsSelectMenuContainer" class="mdc-select mdc-select--box" data-mdc-auto-init="MDCSelect">
+              <select id="settingsSelectMenu" class="mdc-select__native-control">
+                <option name="settings-select-name" id="blankSettingsId" value="data/blank-settings.json">Default Settings</option>
+                <option name="settings-select-name" id="cryptoGnomeSettingsId" value="data/default-v1.json">Crypto Gnome (v2)</option>
+                <option name="settings-select-name" id="cryptoCrowSettingsId" value="data/default.json">Crypto Crow (v2)</option>
+              </select>
+
+              <div class="mdc-select__label mdc-select__label--float-above" for="settingsSelectMenu">Settings Loader</div>
+              <div class="mdc-select__bottom-line"></div>
+            </div>
+          </section>
+
+
+
+
+
+<!--  More Options
+========================================= -->
+          <a href="#" class="material-icons mdc-toolbar__icon toggle icon-more" aria-label="More" alt="More">more_vert</a>
+        </section>
+      </div>
+
+      <!-- Bottom Toolbar 
+      ▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃ 
+
+      
+      <div class="toolbar toolbar-secondary">
+
+        <section class="header-left">
+          <div class="mdc-form-field">
+            <div class="mdc-switch view-switcher">
+              <input type="checkbox" id="viewSwitcher" name="view-switcher-name" class="mdc-switch__native-control">
+              <div class="mdc-switch__background">
+                <div class="mdc-switch__knob"></div>
+              </div>
+            </div>
+            <label for="viewSwitcher" class="mdc-switch-label">Vertical</label>
+          </div> 
+        </section>
+        
+        <section class="header-right" role="toolbar">
+          
+            <div class="mdc-form-field">
+              <div class="mdc-checkbox" data-mdc-auto-init="MDCCheckbox">
+                <input type="checkbox" id="my-checkbox-3" class="mdc-checkbox__native-control"/>
+                <div class="mdc-checkbox__background">
+                <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                  <path class="mdc-checkbox__checkmark-path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                </svg>
+                <div class="mdc-checkbox__mixedmark"></div>
+                </div>
+              </div>
+  
+              <label for="my-checkbox-3">Required</label>
+            </div>
+          
+            <div class="mdc-form-field">
+              <div class="mdc-checkbox" data-mdc-auto-init="MDCCheckbox">
+                <input type="checkbox" id="my-checkbox-3" class="mdc-checkbox__native-control"/>
+                <div class="mdc-checkbox__background">
+                <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                  <path class="mdc-checkbox__checkmark-path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                </svg>
+                <div class="mdc-checkbox__mixedmark"></div>
+                </div>
+              </div>
+  
+              <label for="my-checkbox-3">Optional</label>
+            </div>
+          
+            <div class="mdc-form-field">
+              <div class="mdc-checkbox" data-mdc-auto-init="MDCCheckbox">
+                <input type="checkbox" id="my-checkbox-3" class="mdc-checkbox__native-control"/>
+                <div class="mdc-checkbox__background">
+                <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                  <path class="mdc-checkbox__checkmark-path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                </svg>
+                <div class="mdc-checkbox__mixedmark"></div>
+                </div>
+              </div>
+  
+              <label for="my-checkbox-3">Coin Specific</label>
+            </div>
+        </section>
+      </div> -->
+    </header>
+    
+    <!-- MAIN (Level 1)
+    ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ -->
+    <main id="app">
+      
+      <!-- CODE (Level 2)
+      ▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃ -->
+      <article class="code-container">
+
+        <!-- CODE: Application 
+        ⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼-->
+        <section class="code selected">
+          <code id="applicationFile" class="scrollbar">
+          </code>
+
+          <button class="mdc-fab mini-fab material-icons" aria-label="content_copy">
+            <div data-clipboard-action="copy" data-clipboard-target="#applicationFile">
+              <span class="mdc-fab__icon">
+                content_copy
+              </span>
+            </div>
+          </button>
+        </section>
+
+        <!-- CODE: Pairs 
+        ⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼-->
+        <section class="code">
+          <code id="pairsFile" class="scrollbar">
+          </code>
+
+          <button class="mdc-fab mini-fab material-icons" aria-label="content_copy">
+            <div data-clipboard-action="copy" data-clipboard-target="#pairsFile">
+              <span class="mdc-fab__icon">
+                content_copy
+              </span>
+            </div>
+          </button>
+        </section>	
+
+        <!-- CODE: DCA 
+        ⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼-->
+        <section class="code">
+          <code id="dcaFile" class="scrollbar">
+          </code>
+
+          <button class="mdc-fab mini-fab material-icons" aria-label="content_copy">
+            <div data-clipboard-action="copy" data-clipboard-target="#dcaFile">
+              <span class="mdc-fab__icon">
+                content_copy
+              </span>
+            </div>
+          </button>
+        </section>
+
+        <!-- CODE: Indicators 
+        ⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼-->
+        <section class="code">
+          <code id="indicatorsFile" class="scrollbar">
+          </code>
+
+          <button class="mdc-fab mini-fab material-icons" aria-label="content_copy">
+            <div data-clipboard-action="copy" data-clipboard-target="#indicatorsFile">
+              <span class="mdc-fab__icon">
+                content_copy
+              </span>
+            </div>
+          </button>
+        </section>
+      </article>
+    
+      <!-- CONTROLS (Level 2)
+      ▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃ -->
+      <article class="controls-container">
+
+        <!-- CONTROLS: Application 
+        ⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼-->
+        <section class="controls selected">
+
+          <!-- Controls Header --> 
+          <nav class="mdc-list mdc-list--two-line mdc-list--avatar-list tab-container" data-mdc-auto-init="MDCRipple">
+            
+            <!-- graphic -->
+            <span class="mdc-list-item__graphic graphic-container" role="presentation">
+              <img src="images/icons/icon-application.svg" class="material-icons" alt="APPLICATION.properties">
+            </span>
+            
+            <!-- title -->
+            <section class="title-container">
+              <div class="title">
+                <h3 class="mdc-list-item__text">Application</h3>
+                <div class="stats-container mdc-list-item__secondary-text">
+                  <span class="checked">0</span>
+                  <span>of</span>
+                  <span class="total">0</span>
+                </div>
+              </div> 
+              <div class="graph">
+                <i class="meter" style="transform: translateX(0%);"></i>
+              </div>
+            </section>
+            
+            <!-- percent -->
+            <b class="percent">0</b>
+          </nav>
+
+
+
+          <form id="applicationControls" class="scrollbar">
+            <div class="form-container">
+            </div>
+          </form>
+        </section>
+
+
+        <!-- CONTROLS: Pairs 
+        ⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼-->
+        <section class="controls">
+
+          <!-- Controls Header --> 
+          <nav class="mdc-list mdc-list--two-line mdc-list--avatar-list tab-container" data-mdc-auto-init="MDCRipple">
+  
+            <!-- graphic -->
+            <span class="mdc-list-item__graphic graphic-container" role="presentation">
+              <img src="images/icons/icon-pairs.svg" class="material-icons" alt="PAIRS.properties">
+            </span>
+            
+            <!-- title -->
+            <section class="title-container">
+              <div class="title">
+                <h3 class="mdc-list-item__text">Pairs</h3>
+                <div class="stats-container mdc-list-item__secondary-text">
+                  <span class="checked">0</span>
+                  <span>of</span>
+                  <span class="total">0</span>
+                </div>
+              </div> 
+              <div class="graph">
+                <i class="meter" style="transform: translateX(0%);"></i>
+              </div>
+            </section>
+            
+            <!-- percent -->
+            <b class="percent">0</b>
+          </nav>
+
+          <form id="pairsControls" class="scrollbar">
+            <div class="form-container">
+            </div>
+          </form>
+        </section>
+
+        <!-- CONTROLS: DCA 
+        ⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼-->
+        <section class="controls">
+
+          <!-- Controls Header --> 
+          <nav class="mdc-list mdc-list--two-line mdc-list--avatar-list tab-container" data-mdc-auto-init="MDCRipple">
+  
+            <!-- graphic -->
+            <span class="mdc-list-item__graphic graphic-container" role="presentation">
+              <img src="images/icons/icon-dca.svg" class="material-icons" alt="DCA.properties">
+            </span>
+            
+            <!-- title -->
+            <section class="title-container">
+              <div class="title">
+                <h3 class="mdc-list-item__text">DCA</h3>
+                <div class="stats-container mdc-list-item__secondary-text">
+                  <span class="checked">0</span>
+                  <span>of</span>
+                  <span class="total">0</span>
+                </div>
+              </div> 
+              <div class="graph">
+                <i class="meter" style="transform: translateX(0%);"></i>
+              </div>
+            </section>
+            
+            <!-- percent -->
+            <b class="percent">0</b>
+          </nav>
+          
+          <form id="dcaControls" class="scrollbar">
+            <div class="form-container">
+            </div>
+          </form>
+        </section>
+
+        <!-- CONTROLS: Indicators 
+        ⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼-->
+        <section class="controls">
+
+          <!-- Controls Header --> 
+          <nav class="mdc-list mdc-list--two-line mdc-list--avatar-list tab-container" data-mdc-auto-init="MDCRipple">
+  
+            <!-- graphic -->
+            <span class="mdc-list-item__graphic graphic-container" role="presentation">
+              <img src="images/icons/icon-indicators.svg" class="material-icons" alt="INDICATORS.properties">
+            </span>
+            
+            <!-- title -->
+            <section class="title-container">
+              <div class="title">
+                <h3 class="mdc-list-item__text">Indicators</h3>
+                <div class="stats-container mdc-list-item__secondary-text">
+                  <span class="checked">0</span>
+                  <span>of</span>
+                  <span class="total">0</span>
+                </div>
+              </div> 
+              <div class="graph">
+                <i class="meter" style="transform: translateX(0%);"></i>
+              </div>
+            </section>
+            
+            <!-- percent -->
+            <b class="percent">0</b>
+          </nav>
+
+          <form id="indicatorsControls" class="scrollbar">
+            <div class="form-container">
+            </div>
+          </form>
+        </section>
+      </article>
+      
+    </main>
+    
+    <!-- FOOTER (Level 1)
+    ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ -->
+    <footer>
+
+      <!-- FAB Button -->
+      <section class="fab-container">
+          <button class="mdc-fab" id="show-snackbar">
+              <i class="material-icons">add</i>
+          </button>
+  
+          <!-- Reveal Container -->
+          <nav class="reveal-container">
+
+            <!-- Save Template -->
+            <div class="reveal-item">
+              <span class="item-label">Save Template</span>
+              <button class="mdc-fab mini-fab">
+                  <i class="material-icons">save</i>
+              </button>
+            </div>
+  
+            <!-- Download Zip -->
+            <div class="reveal-item">
+              <span class="item-label">Download Zip</span>
+              <button data-download class="mdc-fab mini-fab download-file">
+                  <i class="material-icons">file_download</i>
+              </button>
+            </div>
+  
+            <!-- Copy File -->
+            <div class="reveal-item">
+              <span class="item-label">Copy File</span>
+              
+              <!-- Copy All -->
+              <button class="mdc-fab mini-fab material-icons" aria-label="content_copy">
+                <div data-clipboard-action="copy" data-clipboard-target="#applicationFile">
+                  <span class="mdc-fab__icon">
+                    content_copy
+                  </span>
+                </div>
+              </button>
+            </div>
+  
+            <!-- Clear All 
+            <div class="reveal-item">
+              <span class="item-label">Clear All</span>
+              
+              <button class="mdc-fab mini-fab material-icons" aria-label="clear_all">
+                <div>
+                  <span class="mdc-fab__icon">
+                    clear_all
+                  </span>
+                </div>
+              </button>
+            </div> -->
+
+          </nav>
+      </section>
+
+    </footer>
+
+		<!-- Dialog 
+		:::::::::::::::::::::::::::::::::
+		<aside class="mdc-dialog-scroll mdc-dialog"
+				   role="alertdialog"
+				   aria-hidden="true"
+				   aria-labelledby="mdc-dialog-with-list-label"
+				   aria-describedby="mdc-dialog-with-list-description">
+
+			<div class="mdc-dialog__surface">
+
+				<header class="mdc-dialog__header">
+					<h2 id="mdc-dialog-with-list-label" class="mdc-dialog__header__title">Choose a Ringtone</h2>
+				</header>
+
+				<section class="mdc-dialog__body">
+					<iframe src="https://wiki.profittrailer.com" frameborder="0" name="iframe"></iframe>
+				</section>
+
+				<footer class="mdc-dialog__footer">
+					<button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Decline</button>
+					<button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Accept</button>
+				</footer>
+			</div>
+
+			<div class="mdc-dialog__backdrop"></div>
+		</aside> -->
+
+    <!-- CDN's -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/material-components-web@0.34.1/dist/material-components-web.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@2.5.2/dist/tippy.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+    <script src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.4/jszip.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.6/enquire.min.js"></script> -->
+
+
+    
+    <!-- build:js js/scripts.min.js -->
+    <!-- <script>mdc.autoInit();</script> -->
+    <script src="components/tooltips/tooltips.js"></script>
+    <!-- <script src="components/dialog/dialog.js"></script> -->
+    <script src="components/count/count.js"></script>
+    <script src="components/rollfx/rollfx.js"></script>
+    <script src="components/bind/bind.js"></script>
+    <script src="components/views/views.js"></script>
+    <script src="components/downloadzip/downloadzip.js"></script>
+    <script src="components/clipboard/clipboard.js"></script>
+    <script src="components/settings/settings.js"></script>
+    <script src="index.js"></script>
+    <!-- endbuild  -->
+
+  </body>
+</html>

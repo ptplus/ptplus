@@ -1,0 +1,14 @@
+{
+  "name": "oneezy-build",
+  "homepage": "https://github.com/oneezy/oneezy-build",
+  "_release": "7c86876e25",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "7c86876e258306939814e044d9adc5b065f200c0"
+  },
+  "_source": "https://github.com/oneezy/oneezy-build.git",
+  "_target": "*",
+  "_originalSource": "oneezy/oneezy-build",
+  "_direct": true
+}

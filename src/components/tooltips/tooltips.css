@@ -1,0 +1,42 @@
+/* Tooltips (tippyjs)
+**********************************************************/
+.tippy-tooltip.dark-theme {
+  /* Your styling here. Example: */
+  border-radius: 3px; 
+  background: var(--mdc-theme-dark); 
+  color: var(--mdc-theme-lite); 
+  padding: .75rem; 
+  font-size: 12px; 
+  text-align: left;
+  color: var(--mdc-theme-lite); 
+}
+
+.tippy-tooltip.dark-theme .tippy-backdrop {
+  /* Your styling here. Example: */
+  border-radius: 3px; 
+  background: var(--mdc-theme-dark); 
+  color: var(--mdc-theme-lite); 
+  padding: .75rem; 
+  font-size: 12px; 
+  text-align: left;
+  color: var(--mdc-theme-lite); 
+}
+
+.tippy-roundarrow {
+  fill: var(--mdc-theme-dark) !important;
+}
+
+.tippy-popper[x-placement^=top] .tippy-tooltip.dark-theme .tippy-arrow {
+  fill: var(--mdc-theme-dark) !important;
+}
+
+.tippy-popper[x-placement^=top] .tippy-tooltip.dark-theme .tippy-roundarrow {
+  fill: var(--mdc-theme-dark) !important;
+}
+
+.tippy-tooltip.dark-theme .tippy-content {
+  /* Your styling here. Example: */
+  font-size: 12px; 
+  text-align: left;
+  color: var(--mdc-theme-lite); 
+}

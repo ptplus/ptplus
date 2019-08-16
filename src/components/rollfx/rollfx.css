@@ -1,0 +1,10 @@
+/* Hover class */
+.code-container .code code pre.font-med { font-size: .7vw; }
+.code-container .code code pre.font-big { font-size: 1vw; }
+.code-container .code code pre.font-focus { font-size: 1vw; }
+
+
+/* Experiment gone wrong...
+.code-container .code code pre.font-med { transform: scale(1.1); transform-origin: left; }
+.code-container .code code pre.font-big { transform: scale(2); transform-origin: left; }
+.code-container .code code pre.font-focus { transform: scale(1.1); transform-origin: left; } */

@@ -1,0 +1,488 @@
+[
+  {
+    "appLabel": "PT+",
+    "appVersion": 1,
+    "appFolders": [
+      {
+        "folderId": "settingsDefault",
+        "folderLabel": "Settings Default",
+        "folderVersion": "v1.2.6.25",
+        "folderFiles": [
+          {
+            "fileId": "file",
+            "fileLabel": "File",
+            "fileControls": [
+              {
+                "controlId": "applicationControls",
+                "controlLabel": "Application",
+                "controlIcon": "icon-application.svg",
+                "controlGroups": [
+                  {
+                    "groupId": "subHeader",
+                    "groupLabel": "Textfields",
+                    "groupMessage": "This is a help message",
+                    "groupInputs": [
+                      {
+                        "inputId": "select1",
+                        "inputType": "select",
+                        "inputClass": "select-1",
+                        "inputName": "select-1-name",
+                        "labelText": "Select 1",
+                        "labelMessage": "This is a help message",
+                        "inputCollection": [
+                          {
+                            "collectionInputId": "option1",
+                            "collectionInputType": "select",
+                            "collectionInputClass": "option-1",
+                            "collectionInputName": "select-name-1",
+                            "collectionLabelText": "Option 1"
+                          },
+                          {
+                            "collectionInputId": "option2",
+                            "collectionInputType": "select",
+                            "collectionInputClass": "option-2",
+                            "collectionInputName": "select-name-1",
+                            "collectionLabelText": "Option 2"
+                          },
+                          {
+                            "collectionInputId": "option3",
+                            "collectionInputType": "select",
+                            "collectionInputClass": "option-3",
+                            "collectionInputName": "select-name-1",
+                            "collectionInputOption": "checked",
+                            "collectionLabelText": "Option 3"
+                          },
+                          {
+                            "collectionInputId": "option4",
+                            "collectionInputType": "select",
+                            "collectionInputClass": "option-4",
+                            "collectionInputName": "select-name-1",
+                            "collectionInputOption": "disabled",
+                            "collectionLabelText": "Option 4"
+                          }
+                        ]
+                      },
+                      {
+                        "inputId": "txt1",
+                        "inputType": "text",
+                        "inputClass": "text-1",
+                        "inputName": "text-1-name",
+                        "labelText": "Textfield Label 1",
+                        "labelMessage": "This is a help message"
+                      },
+                      {
+                        "inputId": "txt2",
+                        "inputType": "text",
+                        "inputClass": "text-2",
+                        "inputName": "text-2-name",
+                        "labelText": "Textfield Label 2",
+                        "labelMessage": "This is a help message"
+                      },
+                      {
+                        "inputId": "txt3",
+                        "inputType": "text",
+                        "inputClass": "text-3",
+                        "inputName": "text-3-name",
+                        "inputOption": "disabled",
+                        "labelText": "Textfield Label 3",
+                        "labelMessage": "This is a help message"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "controlId": "configurationControls",
+                "controlLabel": "Configuration",
+                "controlIcon": "icon-configuration.svg",
+                "controlGroups": [
+                  {
+                    "groupId": "subHeader",
+                    "groupLabel": "Sliders",
+                    "groupMessage": "This is a help message",
+                    "groupInputs": [
+                      {
+                        "inputId": "slider1",
+                        "inputType": "slider",
+                        "inputClass": "slider-1",
+                        "inputName": "slider-1-name",
+                        "inputMin": 0,
+                        "inputMax": 100,
+                        "labelText": "Continuous Slider",
+                        "labelMessage": "This is a help message"
+                      },
+                      {
+                        "inputId": "slider2",
+                        "inputType": "slider",
+                        "inputClass": "mdc-slider--discrete slider-2",
+                        "inputName": "slider-2-name",
+                        "inputMin": 0,
+                        "inputMax": 100,
+                        "inputStep": 1,
+                        "inputValue": 20,
+                        "labelText": "Discrete Slider",
+                        "labelMessage": "This is a help message"
+                      },
+                      {
+                        "inputId": "slider3",
+                        "inputType": "slider",
+                        "inputClass": "mdc-slider--discrete mdc-slider--display-markers slider-3",
+                        "inputName": "slider-3-name",
+                        "inputMin": 0,
+                        "inputMax": 500,
+                        "inputStep": 50,
+                        "inputValue": 100,
+                        "labelText": "Discrete Slider + Steps",
+                        "labelMessage": "This is a help message"
+                      },
+                      {
+                        "inputId": "slider4",
+                        "inputType": "slider",
+                        "inputClass": "mdc-slider--disabled slider-4",
+                        "inputName": "slider-4-name",
+                        "inputMin": 0,
+                        "inputMax": 100,
+                        "inputStep": 1,
+                        "inputValue": 20,
+                        "inputOption": "true",
+                        "labelText": "Disabled Slider",
+                        "labelMessage": "This is a help message"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "controlId": "pairsControls",
+                "controlLabel": "Pairs",
+                "controlIcon": "icon-pairs.svg",
+                "controlGroups": [
+                  {
+                    "groupId": "subHeader",
+                    "groupLabel": "Radio Buttons",
+                    "groupMessage": "This is a help message",
+                    "groupInputs": [
+                      {
+                        "inputId": "radio1",
+                        "inputType": "radio",
+                        "inputClass": "radio-1",
+                        "inputName": "radio-1-name",
+                        "labelText": "Radio 1",
+                        "labelMessage": "This is a help message",
+                        "inputCollection": [
+                          {
+                            "collectionInputId": "rdo1",
+                            "collectionInputType": "radio",
+                            "collectionInputClass": "rdo-1",
+                            "collectionInputName": "radio-name-1",
+                            "collectionLabelText": "Radio 1"
+                          },
+                          {
+                            "collectionInputId": "rdo2",
+                            "collectionInputType": "radio",
+                            "collectionInputClass": "rdo-2",
+                            "collectionInputName": "radio-name-1",
+                            "collectionLabelText": "Radio 2"
+                          },
+                          {
+                            "collectionInputId": "rdo3",
+                            "collectionInputType": "radio",
+                            "collectionInputClass": "rdo-3",
+                            "collectionInputName": "radio-name-1",
+                            "collectionInputOption": "checked",
+                            "collectionLabelText": "Radio 3"
+                          },
+                          {
+                            "collectionInputId": "rdo4",
+                            "collectionInputType": "radio",
+                            "collectionInputClass": "rdo-4",
+                            "collectionInputName": "radio-name-1",
+                            "collectionInputOption": "disabled",
+                            "collectionLabelText": "Radio 4"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "controlId": "dcaControls",
+                "controlLabel": "DCA",
+                "controlIcon": "icon-dca-outline-2.svg",
+                "controlGroups": [
+                  {
+                    "groupId": "subHeader",
+                    "groupLabel": "Checkboxes",
+                    "groupMessage": "This is a help message",
+                    "groupInputs": [
+                      {
+                        "inputId": "checkbox1",
+                        "inputType": "checkbox",
+                        "inputClass": "checkbox-1",
+                        "inputName": "checkbox-1-name",
+                        "labelText": "Checkbox 1",
+                        "labelMessage": "This is a help message",
+                        "inputCollection": [
+                          {
+                            "collectionInputId": "chkbx1",
+                            "collectionInputType": "checkbox",
+                            "collectionInputClass": "chkbx-1",
+                            "collectionInputName": "checkbox-name-1",
+                            "collectionLabelText": "Checkbox 1"
+                          },
+                          {
+                            "collectionInputId": "chkbx2",
+                            "collectionInputType": "checkbox",
+                            "collectionInputClass": "chkbx-2",
+                            "collectionInputName": "checkbox-name-1",
+                            "collectionLabelText": "Checkbox 2"
+                          },
+                          {
+                            "collectionInputId": "chkbx3",
+                            "collectionInputType": "checkbox",
+                            "collectionInputClass": "chkbx-3",
+                            "collectionInputName": "checkbox-name-1",
+                            "collectionInputOption": "checked",
+                            "collectionLabelText": "Checkbox 3"
+                          },
+                          {
+                            "collectionInputId": "chkbx4",
+                            "collectionInputType": "checkbox",
+                            "collectionInputClass": "chkbx-4",
+                            "collectionInputName": "checkbox-name-1",
+                            "collectionInputOption": "disabled",
+                            "collectionLabelText": "Checkbox 4"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "controlId": "indicatorsControls",
+                "controlLabel": "Indicators",
+                "controlIcon": "icon-indicators.svg",
+                "controlGroups": [
+                  {
+                    "groupId": "subHeader",
+                    "groupLabel": "Switches",
+                    "groupMessage": "This is a help message",
+                    "groupInputs": [
+                      {
+                        "inputId": "switch1",
+                        "inputType": "switch",
+                        "inputClass": "switch-1",
+                        "inputName": "switch-1-name",
+                        "labelText": "Checkbox 1",
+                        "labelMessage": "This is a help message"
+                      },
+                      {
+                        "inputId": "switch2",
+                        "inputType": "switch",
+                        "inputClass": "switch-2",
+                        "inputName": "switch-2-name",
+                        "labelText": "Checkbox 1",
+                        "labelMessage": "This is a help message"
+                      },
+                      {
+                        "inputId": "switch3",
+                        "inputType": "switch",
+                        "inputClass": "switch-3",
+                        "inputName": "switch-3-name",
+                        "labelText": "Checkbox 1",
+                        "labelMessage": "This is a help message"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "fileCodes": [
+              {
+                "codeId": "applicationFile",
+                "codeLines": [
+                  {
+                    "lineId": "lineKey1",
+                    "lineKey": "application_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  },
+                  {
+                    "lineId": "lineKey2",
+                    "lineKey": "application_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  },
+                  {
+                    "lineId": "lineKey3",
+                    "lineKey": "application_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  },
+                  {
+                    "lineId": "lineKey4",
+                    "lineKey": "application_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  },
+                  {
+                    "lineId": "lineKey5",
+                    "lineKey": "application_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  },
+                  {
+                    "lineId": "lineKey6",
+                    "lineKey": "application_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  },
+                  {
+                    "lineId": "lineKey7",
+                    "lineKey": "application_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  }
+                ]
+              },
+              {
+                "codeId": "configurationFile",
+                "codeLines": [
+                  {
+                    "lineId": "lineKey8",
+                    "lineKey": "configuration_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  },
+                  {
+                    "lineId": "lineKey9",
+                    "lineKey": "configuration_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  },
+                  {
+                    "lineId": "lineKey10",
+                    "lineKey": "configuration_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  },
+                  {
+                    "lineId": "lineKey11",
+                    "lineKey": "configuration_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  }
+                ]
+              },
+              {
+                "codeId": "pairsFile",
+                "codeLines": [
+                  {
+                    "lineId": "lineKey12",
+                    "lineKey": "pairs_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  },
+                  {
+                    "lineId": "lineKey13",
+                    "lineKey": "pairs_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  },
+                  {
+                    "lineId": "lineKey14",
+                    "lineKey": "pairs_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  },
+                  {
+                    "lineId": "lineKey15",
+                    "lineKey": "pairs_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  }
+                ]
+              },
+              {
+                "codeId": "dcaFile",
+                "codeLines": [
+                  {
+                    "lineId": "lineKey16",
+                    "lineKey": "dca_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  },
+                  {
+                    "lineId": "lineKey17",
+                    "lineKey": "dca_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  },
+                  {
+                    "lineId": "lineKey18",
+                    "lineKey": "dca_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  },
+                  {
+                    "lineId": "lineKey19",
+                    "lineKey": "dca_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  }
+                ]
+              },
+              {
+                "codeId": "indicatorsFile",
+                "codeLines": [
+                  {
+                    "lineId": "lineKey20",
+                    "lineKey": "indicators_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  },
+                  {
+                    "lineId": "lineKey21",
+                    "lineKey": "indicators_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  },
+                  {
+                    "lineId": "lineKey22",
+                    "lineKey": "indicators_command",
+                    "lineValue": "true",
+                    "lineMessage": "This is a help message",
+                    "lineLink": "https://wiki.profittrailer.com/doku.php"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  ]

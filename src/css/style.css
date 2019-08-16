@@ -1,0 +1,248 @@
+/*
+   _____ _________     ___      ______  _____
+  / ____|__   __\ \   / / |    |  ____|/ ____|
+ | (___    | |   \ \_/ /| |    | |__  | (___
+  \___ \   | |    \   / | |    |  __|  \___ \
+  ____) |  | |     | |  | |____| |____ ____) |
+ |_____/   |_|     |_|  |______|______|_____/
+
+*/
+
+
+/* Layout 
+*******************************************/
+body { 
+	height: 100vh;  
+	overflow: hidden;
+	background: var(--mdc-theme-bg);
+	color: var(--mdc-theme-lite);
+}
+
+button { color: white; }
+
+header { display: grid; background: var(--mdc-theme-bg-primary); }
+header .toolbar { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+header .toolbar-primary { 
+	height: 56px;
+}
+header .toolbar-secondary { 
+	background: rgba(0,0,0, .05);
+	height: 42px;
+}
+
+header .header-left,
+header .header-right { height: 100%; display: flex; align-items: center; }
+header .icon-menu { margin: 0 2rem 0 0; }
+header .logo { max-height: calc(100% - 1rem); display: inline-block; }
+header .view-switcher { display: inline-block; }
+/* header .icon-more { margin: 0 0 0 2rem; } */
+
+
+/* Grid
+****************************/
+body { 
+	display: grid;
+	grid-template: auto 1fr 0 / repeat(1, 1fr);
+}
+
+footer { position: fixed; right: 40px; bottom: 40px; z-index: 2; }
+footer button { height: 64px; width: 64px; border-radius: 100%; border: 0; background: var(--mdc-theme-secondary); }
+
+
+.code-container { grid-area: code; }
+.controls-container { grid-area: controls; }
+
+/* Horizontal View
+****************************/
+/* Main  */
+.view-horizontal main { 
+	display: grid;
+	grid-template: 25vh 1fr / 1fr;
+	grid-template-areas:
+		"code"
+		"controls";
+}
+
+/* File Container */
+.view-horizontal .code-container {
+	grid-gap: 1rem;
+	display: grid;
+	grid-template: 1fr / repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.view-horizontal .controls-container {
+	grid-gap: 1rem;
+	display: grid;
+	grid-template: 1fr / repeat(auto-fit, minmax(100px, 1fr));
+}
+
+
+
+
+/* Vertical View
+****************************/
+/* Main  */
+.view-vertical main { 
+	display: grid;
+	grid-template: 1fr / repeat(auto-fit, minmax(280px, 280px));
+	grid-template-areas: "controls code";
+}
+
+/* Controls Container */
+.view-vertical .controls-container { 
+	overflow: hidden;
+	display: grid;
+	grid-template: 1fr / 1fr;
+}
+
+.view-vertical .controls-container .controls { 
+	display: grid;
+	grid-template: 72px auto / auto;
+}
+
+.view-vertical .controls-container .controls:not(.selected) { grid-template: auto auto auto auto / 1fr; align-items: end; }
+.view-vertical .controls-container .controls:not(.selected) h3 {  }
+.view-vertical .controls-container .controls:not(.selected) div { display: none; }
+.view-vertical .code-container .code:not(.selected) { display: none; }
+
+
+/* All Views
+****************************/
+/* Code Container */
+.code-container { display: grid; }
+.code-container .code { position: relative; display: grid; overflow: hidden; }
+.code-container .code:before { content: ""; display: block; position: absolute; left: 0; height: 100%; top: 1rem; width: 1.2vw; z-index: -1; background: #232629; }
+.code-container .code code { margin: 1rem 0; counter-reset: item; list-style-type: none; z-index: 1; overflow: hidden; overflow-y: scroll; position: absolute; top: 0; right: 0; bottom: 0; left: 0; max-height: 100%; }
+.code-container:not(button) { cursor: arrow; }
+
+.code-container .code:after { content: ""; display: block; position: absolute; left: 0; right: 0; height: 1rem; width: 100%; z-index: -1; pointer-events: none; background: linear-gradient(rgba(0, 0, 0, 0), var(--mdc-theme-bg)); background: var(--mdc-theme-bg); }
+.code-container .code:after { bottom: 0; }
+
+.code-container .code code * { text-decoration: none; font-style: normal; }
+
+.code-container .code code pre { will-change: font-size; display: block; font-size: 0.08vw; transition: .22s ease-out; transform-origin: bottom; }
+.code-container .code code pre:before { 
+    background: #232629;
+    content: counter(item, decimal-leading-zero); 
+    counter-increment: item;
+    color: rgba(255,255,255, .14);
+    padding: .05vw .5vw;
+    margin: 0 1.2vw 0 0;
+    display: inline-block;
+} 
+
+
+.code-container .code code pre:first-child:before   { padding: .5vw .5vw .05vw; }
+.code-container .code code pre:last-child:before    { padding: .05vw .5vw .5vw; }
+.code-container .code code pre:hover:before         { color: rgba(255,255,255,.78); }
+.code-container .code code pre:hover                { font-size: 1vw; }
+
+.code-container .code code pre[disabled] *  				{ color: rgba(255,255,255, .24); font-style: italic; font-weight: normal; }
+
+.code-container .code-bg                            { background: #323b44; }
+.code-container .code-comment                       { color: #858788; }
+.code-container .code-key                           { color: var(--mdc-theme-secondary); }
+.code-container .code-equal                         { color: var(--mdc-theme-secondary-light); }
+.code-container .code-value                         { color: var(--mdc-theme-primary); }
+
+
+.code-container .code button { height: 50px; width: 50px; border-radius: 100%; border: 0; background: var(--mdc-theme-primary); position: absolute; right: 10px; top: 100%; transform: scale(.75,.75); z-index: 1; transition: .22s ease-in-out; }
+.code-container .code:hover button { transform: scale(.75,.75) translateY(-150%); }
+
+
+
+/* Controls Container */
+.controls-container .controls { background: var(--mdc-theme-bg-primary); }
+.controls-container .controls nav { background: var(--mdc-theme-bg-secondary); }
+.controls-container .controls form { position: relative; height: calc(100% - 56px); overflow: hidden; overflow-y: scroll; }
+.controls-container .controls form .form-container { padding: 0 1rem 1rem calc(.75rem + 50px); background: var(--mdc-theme-bg-primary); position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+.controls-container .controls form .form-container .mdc-list-group { margin: 1rem 0 1rem; }
+.controls-container .controls form .form-container .mdc-list-group .input-container { margin: 1rem 0;  }
+.controls-container .controls form .form-container h4 { 
+	font-size: 10px;
+	font-weight: 300;
+	text-transform: uppercase !important;
+	transform: translateX(-3rem);
+	width: calc(100% + 3rem);
+	background: var(--mdc-theme-bg-primary);
+	margin: 0;
+	padding: .2rem 0;
+	color: rgba(255,255,255,.24);
+	position: sticky;
+	top: 0;
+	left: 0; right: 0;
+	display: block;
+	z-index: 2;
+	border-bottom: 1px solid rgba(0,0,0,.24);
+}
+
+.controls-container .controls form .form-container h5 {
+	font-size: .875rem;
+	display: inline-flex;
+	line-height: 1.25rem;
+	font-weight: 400;
+	letter-spacing: .04em;
+	text-decoration: inherit;
+	text-transform: inherit;
+	color: var(--mdc-theme-text-primary-on-secondary,rgba(255,255,255,.87));
+}
+
+/* Wiki Links */
+.wiki-wrapper { position: relative; display: inline-flex; }
+.wiki-link {
+	opacity: 0;
+	transition: .22s ease-in-out;
+	position: absolute;
+	left: 100%;
+	bottom: 0;
+	padding: 0 0 0 .5rem;
+	color: var(--mdc-theme-primary);
+}
+.input-container:hover .wiki-link { opacity: 1; transition: .22s ease-in-out; text-decoration: none; }
+/* .input-container:hover .wiki-link:hover { color: var(--mdc-theme-primary); opacity: 1; } */
+
+
+/* Scroll Bar 
+****************************/
+.scrollbar::-webkit-scrollbar                   { width: 10px; }
+.scrollbar::-webkit-scrollbar-track 	          { background-color: rgba(0,0,0,0); }
+.scrollbar::-webkit-scrollbar-thumb 	          { background-color: rgba(255,255,255,0); }
+.scrollbar:hover::-webkit-scrollbar-thumb 	    { background-color: rgba(255,255,255,.07); }
+
+
+/* Fixes */
+.mdc-list { padding: 0; }
+
+
+/*==============================================                                           
+  ####    #####  ##   ##  ##   ####  #####  
+  ##  ##  ##     ##   ##  ##  ##     ##     
+  ##  ##  #####  ##   ##  ##  ##     #####  
+  ##  ##  ##      ## ##   ##  ##     ##     
+  ####    #####    ###    ##   ####  #####  
+                                              
+==============================================*/
+
+/* Mobile */
+@media (min-width: 0) and (max-width: 768px) {
+
+	
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) { 
+
+    
+}
+
+/* Desktop */
+@media (min-width: 1025px) { 
+
+	
+}

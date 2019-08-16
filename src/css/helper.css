@@ -1,0 +1,96 @@
+
+/* Helper
+========================================================================= */
+
+.visually-hidden {
+  border: 0 none;
+  clip: rect(0px, 0px, 0px, 0px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; 
+}
+
+
+/* MDC Textfield 
+***********************************************************/
+.mdc-text-field--upgraded:not(.mdc-text-field--fullwidth):not(.mdc-text-field--box):not(.mdc-text-field--textarea):not(.mdc-text-field--outlined) {
+  height: auto; margin-top: auto;
+}
+
+.mdc-text-field:not(.mdc-text-field--disabled):not(.mdc-text-field--outlined):not(.mdc-text-field--textarea) .mdc-text-field__input {
+  border-bottom: 1px solid rgba(255,255,255,.38) !important; 
+}
+
+.mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input::placeholder, .mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__label {
+  color: rgba(255,255,255,.38); 
+}
+
+
+/* MDC Select 
+***********************************************************/
+.mdc-select:not(.mdc-select--disabled) .mdc-select__label {
+  color: rgba(255,255,255,.38); font-weight: 300; 
+}
+
+.mdc-select:not(.mdc-select--disabled) .mdc-select__native-control {
+  color: var(--mdc-theme-text-primary-on-background,rgba(255,255,255,.87)); font-weight: 400; font-size: 16px; 
+  font-family: Roboto,sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: .04em;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.mdc-select:not(.mdc-select--disabled) .mdc-select__native-control option {
+  color: rgba(0,0,0,.87); 
+}
+
+.mdc-select:not(.mdc-select--disabled) .mdc-select__native-control:focus~.mdc-select__label {
+  color: var(--mdc-theme-primary); 
+}
+
+.mdc-select:not(.mdc-select--disabled) .mdc-select__bottom-line {
+  border-bottom: 1px solid rgba(255,255,255,.38) !important; 
+} 
+
+header .mdc-select.mdc-select--box {
+  border-radius: 0;
+  overflow: hidden;
+} 
+header .mdc-select.mdc-select--box .mdc-select__bottom-line {
+  border-bottom: 1px solid rgba(255,255,255,0) !important; 
+  background-color: rgba(0,0,0,0);
+} 
+
+
+.mdc-select { min-width: 182px; overflow: visible; }
+select { width: 100%; }
+  
+  
+/* MDC Slider 
+***********************************************************/
+.mdc-slider:not(.mdc-slider--disabled) .mdc-slider__track-container { background: var(--mdc-theme-primary-dark); }
+
+
+/* MDC Form Field (switches, radios, checkboxes) 
+***********************************************************/
+.mdc-form-field > label {  }
+.mdc-text-field:not(.mdc-text-field--disabled):not(.mdc-text-field--focused) .mdc-floating-label { color: rgba(255,255,255,.38); font-weight: 300; }
+
+
+/* MDC Switch 
+***********************************************************/
+.mdc-switch .mdc-switch__background { margin: 0 1.25rem 0 0; }
+
+
+/* MDC Checkbox 
+***********************************************************/
+.mdc-checkbox__native-control:enabled:not(:checked):not(:indeterminate)~.mdc-checkbox__background {
+border-color: rgba(255,255,255,.38); }
+

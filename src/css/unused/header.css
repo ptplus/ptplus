@@ -1,0 +1,176 @@
+/* header.css */
+
+header {
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+  padding: 35px 0 149px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+header:after {
+  content: "";
+  background: url("data:image/svg+xml;base64,PHN2ZyBpZD0nTGF5ZXJfMScgZGF0YS1uYW1lPSdMYXllciAxJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxNjUwJyBoZWlnaHQ9JzE0OScgdmlld0JveD0nMCAwIDE2NTAgMTQ5Jz48cG9seWdvbiBwb2ludHM9JzAgMTUwLjM3IDE2NTAgMTUwLjM3IDE2NTAgMCAwIDE0OSAwIDE1MC4zNycgc3R5bGU9J2ZpbGw6I2Y1ZjVmNScvPjwvc3ZnPg==") center bottom no-repeat;
+  background-size: 100% 150px;
+  height: 149px;
+  width: 1600px;
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  ;
+  left: 50%;
+  margin-left: -800px;
+}
+
+.hero-cta-container {
+  text-align: center;
+  padding: 30px 0;
+}
+
+header a {
+  color: #fff;
+}
+
+.main-nav,
+.main-nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.main-nav li {
+  padding: 5px 8px;
+  margin-left: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+
+/* .main-nav > li:first-of-type { padding:0; } */
+
+
+/* orange lines under links */
+
+.main-nav>li:after {
+  content: '';
+  display: block;
+  border: 1px solid #ff703e;
+  position: absolute;
+  top: 100%;
+  width: 0px;
+  left: 50%;
+  margin-left: 0%;
+  transition: 0.25s all;
+  opacity: 0;
+}
+
+.main-nav>li:hover:after {
+  width: 50%;
+  opacity: 1;
+  margin-left: -25%;
+}
+
+
+/* dropdown arrow */
+
+.main-nav>li[dd]>a:after {
+  content: '';
+  border: 1px solid;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-color: transparent #fff #fff transparent;
+  transform: rotate(45deg);
+  position: relative;
+  margin-left: 10px;
+  vertical-align: middle;
+  top: -2px;
+}
+
+
+/* dropdown styles */
+
+.main-nav>li[dd]>ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: 0.25s all;
+  opacity: 0;
+  padding: 0;
+  background: #fff;
+  min-width: 100%;
+  z-index: 1000;
+}
+
+.main-nav>li[dd]:hover li a {
+  white-space: nowrap;
+  color: #000;
+  padding: 12px 12px;
+  display: block;
+  font-weight: 500;
+}
+
+.main-nav>li[dd]:hover li a:hover {
+  color: #fff;
+  background: #ff703e;
+}
+
+.main-nav>li[dd]:hover {
+  /* background:#fff; */
+}
+
+.main-nav>li[dd]:hover>ul {
+  display: block;
+  opacity: 1;
+  transition: 0.25s;
+}
+
+.main-nav>li>ul>li {
+  display: block;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav>.contact-info {
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
+  margin-left: 25px;
+  text-align: left;
+  display: none;
+}
+
+.contact-info>div:first-of-type {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+
+/* swap phone number for free trial button depending on page */
+
+.main-template .contact-info {
+  display: inline-block;
+}
+
+.main-template .free-trial {
+  display: none;
+}
+
+.free-trial a.btn {
+  padding: 5px 20px;
+}
+
+@media (max-width: 991px) {
+  .logo-container a {
+    padding-bottom: 30px;
+    display: block;
+  }
+  .main-nav,
+  .main-nav li {
+    text-align: center;
+  }
+}
